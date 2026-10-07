@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Explorer | Task 4</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                Movie<span>Explorer</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#movies">Movies</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                MOVIE DISCOVERY PLATFORM
+            </span>
+
+            <h1>
+                Discover your
+                <span>next favourite movie.</span>
+            </h1>
+
+            <p>
+                Search movies, explore ratings,
+                discover popular films and view
+                detailed movie information.
+            </p>
+
+            <a href="#movies" class="hero-btn">
+                Explore Movies →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOVIE SECTION -->
+    <section class="movies-section" id="movies">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>EXPLORE</span>
+
+                <h2>Movie Collection</h2>
+
+                <p>
+                    Search and discover movies from
+                    our movie collection.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a movie..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+            <div class="categories">
+
+                <button
+                    class="category active"
+                    data-category="popular"
+                >
+                    Popular
+                </button>
+
+                <button
+                    class="category"
+                    data-category="top"
+                >
+                    Top Rated
+                </button>
+
+                <button
+                    class="category"
+                    data-category="action"
+                >
+                    Action
+                </button>
+
+                <button
+                    class="category"
+                    data-category="comedy"
+                >
+                    Comedy
+                </button>
+
+                <button
+                    class="category"
+                    data-category="upcoming"
+                >
+                    Upcoming
+                </button>
+
+            </div>
+
+
+            <!-- LOADING -->
+            <div
+                id="loading"
+                class="loading hidden"
+            >
+
+                <div class="spinner"></div>
+
+                <p>
+                    Loading movies...
+                </p>
+
+            </div>
+
+
+            <!-- ERROR -->
+            <div
+                id="errorMessage"
+                class="error hidden"
+            >
+                <h3>Something went wrong</h3>
+
+                <p id="errorText">
+                    Unable to load movies.
+                </p>
+            </div>
+
+
+            <!-- MOVIE GRID -->
+            <div
+                id="movieGrid"
+                class="movie-grid"
+            >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOVIE DETAILS MODAL -->
+    <div
+        id="movieModal"
+        class="modal hidden"
+    >
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn"
+            >
+                ×
+            </button>
+
+            <div id="movieDetails">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <span>ABOUT THE PROJECT</span>
+
+            <h2>
+                Movie Explorer
+            </h2>
+
+            <p>
+                Movie Explorer is a responsive movie
+                discovery website that allows users
+                to search movies, view ratings,
+                explore categories and see detailed
+                movie information.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <h3>
+                Movie<span>Explorer</span>
+            </h3>
+
+            <p>
+                Task 4 - Movie Explorer Application
+            </p>
+
+            <p>
+                © 2026 Angaeaswari | B.Tech IT
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
